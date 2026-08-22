@@ -28,3 +28,4 @@ jobs:
         cache: 'yarn'
     - run: yarn install --frozen-lockfile --ignore-platform
     - run: yarn build
+    - run: npm run test --if-present
