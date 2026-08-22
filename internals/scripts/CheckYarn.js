@@ -8,7 +8,7 @@ try {
 
   if (!semverSatisfies(npmVersion, requiredVersionRange)) {
     console.error(
-      `Error: This project requires npm version ${requiredVersionRange}. You have version ${npmVersion}.\nPlease install a compatible npm version and try again.`
+      `Error: This project requires npm version ${requiredVersionRange}. You have version ${npmVersion}.\nPlease install a compatible npm version (for example: npm install -g npm@latest) and try again.`
     );
     process.exit(1);
   }
