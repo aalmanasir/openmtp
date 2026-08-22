@@ -1,0 +1,12 @@
+# Default owner for all repository changes
+* @aalmanasir
+
+# GitHub automation and CI configuration
+.github/ @aalmanasir
+
+# Desktop runtime, build, and packaging surfaces
+app/ @aalmanasir
+internals/ @aalmanasir
+webpack/ @aalmanasir
+package.json @aalmanasir
+yarn.lock @aalmanasir
