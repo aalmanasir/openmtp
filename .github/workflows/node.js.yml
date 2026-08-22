@@ -28,4 +28,9 @@ jobs:
         cache: 'yarn'
     - run: yarn install --frozen-lockfile --ignore-platform
     - run: yarn build
-    - run: node -e "process.exit(require('./package.json').scripts?.test ? 0 : 1)" && yarn test || echo "No test script defined, skipping."
+    - run: |
+        if node -e "process.exit(require('./package.json').scripts?.test ? 0 : 1)"; then
+          yarn test
+        else
+          echo "No test script defined, skipping."
+        fi
